@@ -414,11 +414,11 @@ impl YoutubeDl {
             args.push(extra_arg);
         }
 
-        args.push("-J");
+        // args.push("-J");
 
         #[cfg(feature = "yt-dlp")]
         if self.download {
-            args.push("--no-simulate");
+            // args.push("--no-simulate");
             args.push("--no-progress");
         }
 
